@@ -23,7 +23,7 @@ type SensorData = {
   sensorID: string;
 };
 
-const { height, width } = Dimensions.get("window");
+const { height } = Dimensions.get("window");
 
 const initialData = [
   { value: 0 },
@@ -77,6 +77,7 @@ const PatientReportScreen = () => {
     return () => {
       socket.disconnect();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [param?.id]);
 
   return (
@@ -216,6 +217,7 @@ const CustomChart = ({
 
 const dataFormatter = (data: any) => {
   const { temperature, spo2, heartrate } = data.sensorData;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const time = new Intl.DateTimeFormat("en-US", {
     hour: "numeric",
     minute: "numeric",

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Redirect, router } from "expo-router";
+import { Redirect } from "expo-router";
 import * as SecureStore from "expo-secure-store";
 import axios from "axios";
 

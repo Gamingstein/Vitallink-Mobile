@@ -1,22 +1,22 @@
 {
   "expo": {
-    "name": "vitallink",
-    "slug": "vitallink",
+    "name": "vitallinkv2",
+    "slug": "vitallinkv2",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "vitallinkv2",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.gamingstein.vitallink"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "edgeToEdgeEnabled": true
     },
     "web": {
       "bundler": "metro",
@@ -28,16 +28,10 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash.png",
+          "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#5A4FCF"
-        }
-      ],
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "The app accesses your photos to let you share them with your friends."
+          "backgroundColor": "#ffffff"
         }
       ],
       "expo-secure-store"

@@ -32,7 +32,7 @@ const GET_PATIENT = gql`
   }
 `;
 
-const { height, width } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
 const titleCase = (str: string) => {
   return str

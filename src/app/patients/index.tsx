@@ -38,7 +38,7 @@ const PatientsScreen = () => {
   const [searchQuery, setSearchQuery] = React.useState<string>("");
 
   const filteredData = data?.patientsbydoctor.filter((item: any) =>
-    item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    item.name.toLowerCase().includes(searchQuery.toLowerCase()),
   );
 
   const { top } = useSafeAreaInsets();
